@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OnePlus" parallel="tests" thread-count="8">
+	<listeners>
+		<listener class-name="com.arb.aut.Listener.TestListener" />
+	</listeners>
+
+	<test name="GalaxyS7">
+		<parameter name="description" value="Galaxy S7" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="Android" />
+		<parameter name="devicemodel"
+				   value="7D048E95" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_InstantInternationalTransferToBank" />
+		</classes>
+	</test>
+	<test name="iPhoneX">
+		<parameter name="description" value="IPhoneX" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="ios" />
+		<parameter name="devicemodel"
+				   value="29E2258DECE10B5779932592D9F6EDE7B9383C1A" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Cards2" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_InstantInternationalTransfer" />
+		</classes>
+	</test>
+
+	<test name="iPhoneXSMax">
+		<parameter name="description" value="iPhoneXSMax" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="iOS" />
+		<parameter name="devicemodel"
+				   value="00008020-000149663ED9002E" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_InternationalTransfer" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_LocalTransfer_ManageVisibilityMob" />
+		</classes>
+	</test>
+
+	<test name="OnePlus3">
+		<parameter name="description" value="OnePlus3" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="Android" />
+		<parameter name="devicemodel" value="FEB2C98D" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_AlrajhiTransfer" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_CharityTransfer" />
+		</classes>
+	</test>
+
+	<test name="Mate20Pro">
+		<parameter name="description" value="Mate20Pro" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="Android" />
+		<parameter name="devicemodel" value="LHS7N19314005954" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.FinancialProducts" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_StandingOrder" />
+
+		</classes>
+	</test>
+
+	<test name="GalaxyNote9">
+		<parameter name="description" value="GalaxyNote9" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="Android" />
+		<parameter name="devicemodel" value="2B532E81A83F7ECE" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Payments" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Payments2" />
+		</classes>
+	</test>
+
+	<test name="IPhone7new">
+		<parameter name="description" value="IPhone7new" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="IOS" />
+		<parameter name="devicemodel"
+				   value="8230DAF73D07EF03133EB803E584E99CBD99E64C" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.arb.aut.Runner.RegressionRunners.Cards" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Transfer_OwnAccountTransfer_Portfolio" />
+		</classes>
+	</test>
+
+	<test name="IPhone7Old">
+		<parameter name="description" value="IPhone7old" />
+		<parameter name="language" value="EN" />
+		<parameter name="platform" value="IOS" />
+		<parameter name="devicemodel"
+				   value="9175D689B5EADBF208A640D6778768881A027A6F" />
+		<parameter name="theme" value="colorful" />
+		<classes>
+			<class name="com.project.test.Runner.RegressionRunners.Accounts" />
+			<class name="com.arb.aut.Runner.RegressionRunners.PreLogin" />
+			<class name="com.arb.aut.Runner.RegressionRunners.SettingsAndPreferences" />
+			<class name="com.arb.aut.Runner.RegressionRunners.FinanceAndInvestment" />
+			<class name="com.arb.aut.Runner.RegressionRunners.EcareAndHelp" />
+			<class name="com.arb.aut.Runner.RegressionRunners.MokafaaWallet" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Offers" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Takaful" />
+			<class name="com.arb.aut.Runner.RegressionRunners.Dashboard" />
+		</classes>
+	</test>
+</suite>
