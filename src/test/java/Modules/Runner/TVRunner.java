@@ -9,8 +9,8 @@ import project.Base.AbstractTestNG;
 		glue = {"Modules/StepDefinitions","project.Hooks"},
 		tags = "@TVSearch",
 		plugin = {"pretty",
-				"html:target/cucumber-reports/cucumber.html",
-				"json:target/cucumber-report/cucumber.json" },
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"timeline:test-output-thread/" },
 		monochrome = false,
 		dryRun = false
 )

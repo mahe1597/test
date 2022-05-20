@@ -1,0 +1,13 @@
+/target/
+/test-output/
+/TestReport/
+/Screenshots/
+TestData/
+/pom.xml
+/bin/
+test output/
+test-output-thread/
+.idea/
+/.idea/
+.settings/
+/.settings/

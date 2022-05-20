@@ -22,13 +22,13 @@ public class TestBase {
 	@BeforeTest
 	public void initializer(){
 		URL.set("https://www.amazon.in/");
-		System.out.println(URL.get());
 	}
 
 	@BeforeClass(alwaysRun = true)
 	public static void launchDriver(ITestContext iTestResult) throws Exception {
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get(URL.get());
 	}
 
